@@ -174,9 +174,16 @@ class _ApprovedFoodListState extends State<ApprovedFoodList> {
                                 ? SubstringHighlight(
                                     text: '$name ($servingSize)',
                                     term: _searchController.text,
+                                    textStyleHighlight: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+backgroundColor: Colors.yellow,
+                                        color: /*generateRandomColor()*/ HexColor
+                                            .fromHex(colorCode)),
                                     textStyle: TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
+
                                         color: /*generateRandomColor()*/ HexColor
                                             .fromHex(colorCode)))
                                 : RichText(
@@ -233,6 +240,7 @@ class _ApprovedFoodListState extends State<ApprovedFoodList> {
           term: _searchController.text,
           textStyleHighlight: TextStyle(
             fontSize: 16,
+            backgroundColor: Colors.yellow,
             color: colorCode == null
                 ? generateRandomColor()
                 : HexColor.fromHex(colorCode),
@@ -306,6 +314,7 @@ class _ApprovedFoodListState extends State<ApprovedFoodList> {
               children: [
                 ListTile(
                     title: SubstringHighlight(
+                      textStyleHighlight: TextStyle(backgroundColor: Colors.yellow),
                         text: e, term: _searchController.text)),
                 Divider()
               ],
