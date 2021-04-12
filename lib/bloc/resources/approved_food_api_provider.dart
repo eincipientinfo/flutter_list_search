@@ -7,7 +7,7 @@ import 'package:quovantis_test/utils/CommonApiClass.dart';
 class ApprovedFoodApiProvider {
   Future<ApprovedFood> getApprovedFoodList() async {
     Response response = await CommonApiClass.callAPI(
-      "https://api.jsonbin.io/b/5fce7e1e2946d2126fff85f0",
+      "http://php.demo4work.com/dev6/jsonbin.php",
       null,
       null,
       0,
