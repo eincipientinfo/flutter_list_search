@@ -1,6 +1,6 @@
-# quovantis_test
+# test_project
 
-Quovantis Practical Test
+Get list from json and display as expanded list and search keywords from them
 
 ## Getting Started
 
